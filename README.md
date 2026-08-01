@@ -4,7 +4,7 @@
 
 ArsenicGuard is a distributed, production-grade Explainable AI (XAI) and Adaptive Decision Support system engineered to predict groundwater arsenic contamination risks in Bangladesh. Built upon the comprehensive DPHE/BGS National Hydrochemical Survey dataset (2,386 spatial aquifer records), this system bridges high-precision machine learning with transparent, human-interpretable linguistic insights and structural recommendations.
 
-Target Conference: **ICCIT 2026 (IEEE)**
+
 
 ---
 
