@@ -4,17 +4,17 @@ import pandas as pd
 import numpy as np
 from xgboost import XGBClassifier
 
-# ১. FastAPI অ্যাপ ইনিশিয়েট করা
+# 1. FastAPI
 app = FastAPI(title="ArsenicGuard AI Agent Core", description="Production API for Adaptive Groundwater Risk Assessment")
 
-# ২. গ্লোবালি মডেল লোড করা
+# 2. গ্লোবালি মডেল লোড করা
 try:
     xgb_model = XGBClassifier()
     xgb_model.load_model('arsenic_guard_model.json')
 except Exception as e:
     raise RuntimeError("❌ 'arsenic_guard_model.json' ফাইলটি পাওয়া যায়নি! আগে মডেল সেভ করুন।")
 
-# ৩. ইনপুট ডেটার জন্য পাইড্যান্টিক (Pydantic) স্কিমা তৈরি
+# 3. ইনপুট ডেটার জন্য পাইড্যান্টিক (Pydantic) স্কিমা তৈরি
 class WellInput(BaseModel):
     WELL_DEPTH: float
     Fe: float
